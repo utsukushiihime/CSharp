@@ -51,6 +51,22 @@ namespace ConsoleApp
   {
      IAndroid androidPhone;
      IiOS iOSPhone;
+
+     public MobileClient(IMobile factory)
+     {
+       androidPhone = factory.GetAndroidPhone();
+       iOSPhone = factory.GetiOSPhone();
+     }
+
+     public string GetAndroidPhoneDetails()
+     {
+       return androidPhone.GetModelDetails();
+     }
+
+     public string GetiOSPhoneDetails()
+     {
+       return iOSPhone.GetModelDetails();
+     }
   }
   
   class Example
