@@ -72,7 +72,7 @@ namespace ConsoleApp
   
   class Example
   {
-    public void Main(string[] args)
+    public static void Main(string[] args)
     {
       IMobile samsungMobilePhone = new Samsung();
       MobileClient samsungClient = new MobileClient(samsungMobilePhone);
