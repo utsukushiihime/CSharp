@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace ConsoleApp
 {
@@ -73,7 +74,11 @@ namespace ConsoleApp
   {
     public void Main(string[] args)
     {
-      
+      IMobile samsungMobilePhone = new Samsung();
+      MobileClient samsungClient = new MobileClient(samsungMobilePhone);
+
+      Debug.WriteLine(samsungClient.GetAndroidPhoneDetails());
+      Debug.WriteLine(samsungClient.GetiOSPhoneDetails());
     }
   }
 }
