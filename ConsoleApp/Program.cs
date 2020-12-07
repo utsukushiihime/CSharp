@@ -36,7 +36,7 @@ namespace ConsoleApp
   {
     public string GetModelDetails()
     {
-      return "Model: Samsung Galaxy - RAM: 2GB - Camera: 13MP";
+      return "Model: Samsung Galaxy - RAM: 8GB - Camera: 22MP";
     }
   }
 
